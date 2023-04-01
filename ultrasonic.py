@@ -15,7 +15,7 @@ mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 # Setting up GPIO mode and pin for LED
 GPIO.setmode(GPIO.BOARD)
 
-ultra_channel = 0
+ultrasonic_channel = 0
 
 # Read the output of the Grove light sensor with intervals of 100ms and print the raw value along with the text “bright” or “dark”
 threshold = 500  
