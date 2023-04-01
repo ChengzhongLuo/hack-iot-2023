@@ -21,7 +21,7 @@ ultrasonic_channel = 0
 threshold = 500  
 start_time = time.time()
 while (time.time() - start_time) < 5:
-    light_value = mcp.read_adc(ultrasonic_channel)
+    ultrasonic_value = mcp.read_adc(ultrasonic_channel)
     if ultrasonic_value > threshold:
         print("No: ", ultrasonic_value)
     else:
